@@ -3,12 +3,15 @@ Process mining generates valuable insights into business processes through the a
 
 ## Chosen architecture
 To account for the sequential nature of event data, we choose an LSTM-based GAN. An Illustration of the generator can be found below.
+
 ![generator_architecture](./Images/generator_architecture.png)
 
 An Illustration of the generator can be found below.
+
 ![discriminator_architecture](./Images/discriminator_architecture.png)
 
 ## Results
 We evaluated our approach by repairing six event logs in 30 different variations. We compare the performance of our approach against available baselines. The results for one exemplary real-life event log can be seen below.
+
 ![effectiveness_reordering](./Images/effectiveness_sorting.png)
 ![effectiveness_estimating](./Images/effectiveness_estimation.png)
