@@ -1,0 +1,9 @@
+keras==2.11.0
+Keras_Preprocessing==1.1.2
+matplotlib==3.5.2
+numpy==1.21.5
+pandas==1.4.4
+pm4py==2.3.2
+python_Levenshtein==0.20.9
+scikit_learn==1.2.1
+tqdm==4.64.1
