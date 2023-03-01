@@ -15,3 +15,24 @@ We evaluated our approach by repairing six event logs in 30 different variations
 
 ![effectiveness_reordering](./Images/effectiveness_sorting.png)
 ![effectiveness_estimating](./Images/effectiveness_estimation.png)
+
+## Requirements & Dependencies
+We added a [requirements.txt](requirements.txt) as well as a [CycloneDX bill-of-material document](cyclonedx.xml) in the repository. 
+
+## Usage
+1.) Install the necessary libraries
+> pip install -r requirements.txt
+>
+2.) Open TimestampGAN.ipynb, run the first cell and afterwards the following commands
+>repair = TimestampGAN('path/to/event_log.csv', 'name_of_id_column', 'name_of_timestamp_column', 'name_of_activity_column', 'path/for/repaired/log/')
+>
+>repair.prepare_data()
+>
+>repair.reorder_events()
+>
+>repair.construct_networks()
+>
+>repair.train_gan()
+>
+>repair.repair_timestamps()
+>
