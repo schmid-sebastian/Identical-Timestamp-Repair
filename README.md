@@ -23,4 +23,16 @@ We added a [requirements.txt](requirements.txt) as well as a [CycloneDX bill-of-
 1.) Install the necessary libraries
 > pip install -r requirements.txt
 >
-2.) t.b.d
+2.) Open TimestampGAN.ipynb, run the first cell and afterwards the following commands
+>repair = TimestampGAN('path/to/event_log.csv', 'name_of_id_column', 'name_of_timestamp_column', 'name_of_activity_column', 'path/for/repaired/log/')
+>
+>repair.prepare_data()
+>
+>repair.reorder_events()
+>
+>repair.construct_networks()
+>
+>repair.train_gan()
+>
+>repair.repair_timestamps()
+>
